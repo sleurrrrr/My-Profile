@@ -1,0 +1,146 @@
+body {
+  background: linear-gradient(to right, #24243a, #262626);
+  font-family: Comic Sans MS;
+  box-sizing: border-box;
+}
+/* Profile */
+#box-profile {
+  display: block;
+  position: relative;
+  text-align: center;
+  background-color: #151515 transparent;
+  width: 80%;
+  border-top: 6px outset #222121;
+  border-bottom: 6px outset #222121;
+  box-shadow: 0 0 20px #141414;
+  transition: box-shadow 0.4s ease;
+  border-radius: 20px;
+  padding: 30px 0 10px 0;
+  margin: 50px auto;
+}
+#box-profile h1 {
+  color: blanchedalmond;
+  text-shadow: 0 0 10px #464646;
+  transition: box-shadow 0.4s ease;
+}
+#box-profile h3 {
+  text-align: center;
+  color: blanchedalmond;
+  text-shadow: 0 0 10px #464646;
+  transition: box-shadow 0.3s ease;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.photo-profile {
+  width: 40%;
+  max-width: 300px;
+  border: 6px outset #222121;
+  box-shadow: 0 0 15px #737373;
+  transition: box-shadow 0.7s ease;
+  border-radius: 50%;
+}
+
+/* Box Sosmed */
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: blanchedalmond;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #222121;
+  transition: box-shadow 0.3s ease;
+  font-size: small;
+  width: fit-content;
+  height: 15%;
+  padding: 10px 10px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+#toggle {
+  display: none; /*Untuk menyembunyikan kotak checkbox*/
+  background-color: #444;
+  padding: 0px;
+  margin-top: 0px;
+  border-radius: 0px;
+}
+.box-sosmed {
+  display: block;
+  background: linear-gradient(to left, #24243a, #262626);
+  max-width: 0;
+  max-height: 0;
+  transform: scale(0, 2);
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, max-width 0.5s ease-out,
+    transform 0.4s ease, opacity 0.6s ease-out;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #222121;
+  padding: 0;
+}
+
+.link-ig,
+.link-wa,
+.link-tt {
+  text-align: justify;
+  display: inline;
+  text-shadow: 0 0 15px #262525;
+  transition: box-shadow 0.3s ease;
+}
+.link-ig img,
+.link-wa img,
+.link-tt img {
+  width: 15%;
+  max-width: 60px;
+  border: 2px outset #222121;
+  background-color: blanchedalmond transparent;
+  border-radius: 50%;
+  padding: 2px;
+  margin-top: 3px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+div a {
+  text-decoration: none;
+}
+#toggle:checked ~ .box-sosmed {
+  max-height: 50px;
+  max-width: 250px;
+  padding: 0px 10px;
+  transform: scale(0.9);
+}
+
+/* Footer */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  width: 90%;
+  color: blanchedalmond;
+  background-color: gray transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #141414;
+  transform: scale(1.1);
+}
+#footer img {
+  width: 60%;
+  max-width: 40px;
+  margin-left: 10px;
+  animation: bounce 3s infinite ease-in-out;
+}
+@keyframes bounce {
+  90%,
+  50% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
